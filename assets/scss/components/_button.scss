@@ -1,0 +1,10 @@
+.btn-pink {
+    @include button( $primary-1,  $primary-1,  $white-1 ,$primary-1);
+    border-radius: $br-1;
+    // box-shadow: 0 0 0 3rem $primary inset;
+    outline: none!important;
+    padding: $p-1 $p-2;
+    color: $white-1;
+    font-size: $fs-2;
+}
+
