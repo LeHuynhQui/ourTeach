@@ -1,5 +1,8 @@
+// Sử dụng thư viện AOS
 AOS.init({ duration: 1000 });
 
+
+// Xử lý thanh nav bar 
 window.addEventListener("scroll", e => {
     if(window.innerWidth <= 1200) {
         if (window.scrollY >=100) {
@@ -100,6 +103,8 @@ document.querySelector(".humburger").addEventListener("click", e => {
 })
 
 
+
+// kết hợp xử lý dữ liệu từ back-end 
 const service = new TeacherService()
 
 function getTeacherList () {
@@ -148,6 +153,8 @@ document.querySelector(".send-btn").addEventListener("click", e => {
     })
 })
 
+
+// xử lý validation form
 function hanleClick() {
     if (!document.querySelector(".yourEmail").value) {
         document.querySelector(".text-white").innerHTML = "* The field is required!"
